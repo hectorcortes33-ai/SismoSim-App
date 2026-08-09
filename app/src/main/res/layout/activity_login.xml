@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- Quita el cursor/foco automático de los EditText en la vista previa -->
+    <requestFocus />
+
+    <!-- 1. Escudo o logotipo (scaleType centerInside) -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_myplaces"
+        android:background="@drawable/bg_circle_avatar"
+        android:padding="20dp"
+        app:tint="#757575"
+        android:contentDescription="Logotipo o escudo"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 2. Encabezado (textStyle bold, textSize 24sp) -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Etiqueta: Correo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="6dp" />
+
+    <!-- 3. Campo Correo (inputType textEmailAddress) -->
+    <EditText
+        android:id="@+id/edtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_input_field"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Etiqueta: Contraseña -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="6dp" />
+
+    <!-- 4. Campo Contraseña (inputType textPassword) -->
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_input_field"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 5. Botón Entrar -->
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="INGRESAR"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="#337AB7"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 6. Enlace a Registro (clickable true) -->
+    <TextView
+        android:id="@+id/txtRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear cuenta"
+        android:textSize="14sp"
+        android:textColor="#337AB7"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="start"
+        android:padding="8dp" />
+
+</LinearLayout>

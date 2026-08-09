@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- 1. Identificador del nodo (#1) -->
+    <TextView
+        android:id="@+id/txtNodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nodo TLP-01"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- 2. Estado del nodo (#2) -->
+    <TextView
+        android:id="@+id/txtEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="en reposo"
+        android:textColor="#00897B"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- 3. Última lectura de V1 (#3) -->
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00 g"
+        android:textColor="#00897B"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <!-- 4. Antigüedad del latido (#4) -->
+    <TextView
+        android:id="@+id/txtLatido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latido: hace 0 s"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Texto auxiliar de frecuencia de sondeo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sondeo cada 2 s"
+        android:textColor="#9E9E9E"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Espaciador flexible -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 5. ProgressBar indeterminado (#5) -->
+    <ProgressBar
+        android:id="@+id/prgSondeo"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"
+        tools:visibility="visible" />
+
+    <!-- 6. Botón para ir a Simular Sismo (#6) -->
+    <Button
+        android:id="@+id/btnSimular"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="SIMULAR SISMO"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="#337AB7" />
+
+    <!-- 7. Leyenda obligatoria y permanente (#7) -->
+    <TextView
+        android:id="@+id/txtLeyenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIMULADOR ACADÉMICO\nNo es un sistema de alerta real"
+        android:textAlignment="center"
+        android:textColor="#D32F2F"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="#FFCDD2" />
+
+</LinearLayout>

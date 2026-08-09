@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_simular"
+        android:title="Simular Sismo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_historial"
+        android:title="Historial de Eventos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_ajustes"
+        android:title="Ajustes (Blynk Token)"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_acerca_de"
+        android:title="Acerca de"
+        app:showAsAction="never" />
+
+</menu>

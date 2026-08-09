@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"> <!-- Fondo blanco por defecto -->
+
+    <!-- 1. Titular de alerta (se llena en runtime) -->
+    <TextView
+        android:id="@+id/txtAlerta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 2. Valor pico que disparó el umbral (se llena en runtime) -->
+    <TextView
+        android:id="@+id/txtPico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#00796B"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 3. Nodo y marca de tiempo (se llena en runtime) -->
+    <TextView
+        android:id="@+id/txtOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#616161"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Espacio flexible para empujar el botón y la leyenda al fondo -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 4. Botón Entendido/Cerrar -->
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="ENTENDIDO"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        app:backgroundTint="#337AB7" />
+
+    <!-- 5. Leyenda obligatoria -->
+    <TextView
+        android:id="@+id/txtLeyenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIMULADOR ACADÉMICO\nNo es un sistema de alerta real"
+        android:textAlignment="center"
+        android:textColor="#D32F2F"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="#FFCDD2" />
+
+</LinearLayout>

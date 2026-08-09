@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- 1. Encabezado de la pantalla (#1) -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provocar evento"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magnitud"
+        android:textColor="#616161"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 2. SeekBar (#2) -->
+    <SeekBar
+        android:id="@+id/skbMagnitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="42"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 3. Muestra el valor en tiempo real (#3) -->
+    <TextView
+        android:id="@+id/txtMagnitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.2"
+        android:textColor="#00796B"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 4. Botón Disparar / Provocar Sismo (#4) -->
+    <Button
+        android:id="@+id/btnDisparar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="PROVOCAR SISMO"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:backgroundTint="#D32F2F"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 5. ProgressBar horizontal para el temporizador de 15s (#5) -->
+    <ProgressBar
+        android:id="@+id/prgEvento"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="15"
+        android:progress="0"
+        android:visibility="invisible"
+        android:layout_marginBottom="16dp"
+        tools:visibility="visible" />
+
+    <!-- 6. Estado de envío/confirmación (#6) -->
+    <TextView
+        android:id="@+id/txtEstadoEnvio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        tools:text="Escribiendo V2 = 1..." />
+
+</LinearLayout>

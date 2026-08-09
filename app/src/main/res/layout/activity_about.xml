@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <!-- 1. Encabezado -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acerca de"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 2. Integrantes y materia -->
+    <TextView
+        android:id="@+id/txtEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equipo IngeSaurios - Aplicaciones Móviles\nProfesor: NESTOR SIERRA URIBE"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 3. Versión -->
+    <TextView
+        android:id="@+id/txtVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versión 1.0 - agosto 2026"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="48dp" />
+
+    <!-- 4. Leyenda obligatoria con RECUADRO ROJO -->
+    <TextView
+        android:id="@+id/txtLeyenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIMULADOR ACADÉMICO\nNo es un sistema de alerta real"
+        android:textColor="#D32F2F"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:background="@drawable/borde_rojo" />
+
+</LinearLayout>

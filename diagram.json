@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "author": "UNITEC - Aplicaciones Moviles",
+  "editor": "wokwi",
+
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot1",
+      "top": -145.3,
+      "left": 172.6,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 120,
+      "left": 230,
+      "attrs": {
+        "color": "red",
+        "label": "Disparo local"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -30,
+      "left": 380,
+      "attrs": {
+        "color": "red",
+        "label": "Latido / evento"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 60,
+      "left": 370,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+
+  "connections": [
+    [ "esp:3V3", "pot1:VCC", "red", [ "v0" ] ],
+    [ "esp:GND.1", "pot1:GND", "black", [ "v0" ] ],
+    [ "pot1:SIG", "esp:D34", "green", [ "v0" ] ],
+
+    [ "btn1:1.l", "esp:18", "blue", [ "v0" ] ],
+    [ "btn1:2.l", "esp:GND.2", "black", [ "v0" ] ],
+
+    [ "esp:4", "r1:1", "green", [ "v0" ] ],
+    [ "r1:2", "led1:A", "green", [ "v0" ] ],
+    [ "led1:C", "esp:GND.3", "black", [ "v0" ] ]
+  ],
+
+  "dependencies": {}
+}

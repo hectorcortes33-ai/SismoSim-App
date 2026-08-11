@@ -14,7 +14,7 @@ public class BlynkApi {
     // URL base oficial de la API HTTP de Blynk IoT
     private static final String BASE_URL = "https://blynk.cloud/external/api/";
 
-    // Ejecutor para peticiones en segundo plano (evita que la app se trabe)
+    // Ejecutor para peticiones en segundo plano
     private static final ExecutorService executor = Executors.newSingleThreadExecutor();
     // Handler para regresar la respuesta a la interfaz principal
     private static final Handler handler = new Handler(Looper.getMainLooper());

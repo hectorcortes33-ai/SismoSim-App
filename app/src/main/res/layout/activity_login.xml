@@ -13,7 +13,7 @@
     <!-- Quita el cursor/foco automático de los EditText en la vista previa -->
     <requestFocus />
 
-    <!-- 1. Escudo o logotipo (scaleType centerInside) -->
+    <!-- 1. Escudo o logotipo -->
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="100dp"
@@ -26,7 +26,7 @@
         android:contentDescription="Logotipo o escudo"
         android:layout_marginBottom="24dp" />
 
-    <!-- 2. Encabezado (textStyle bold, textSize 24sp) -->
+    <!-- 2. Encabezado  -->
     <TextView
         android:id="@+id/txtTitulo"
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
         android:textColor="#333333"
         android:layout_marginBottom="6dp" />
 
-    <!-- 3. Campo Correo (inputType textEmailAddress) -->
+    <!-- 3. Campo Correo  -->
     <EditText
         android:id="@+id/edtCorreo"
         android:layout_width="match_parent"
@@ -69,7 +69,7 @@
         android:textColor="#333333"
         android:layout_marginBottom="6dp" />
 
-    <!-- 4. Campo Contraseña (inputType textPassword) -->
+    <!-- 4. Campo Contraseña -->
     <EditText
         android:id="@+id/edtPass"
         android:layout_width="match_parent"
@@ -94,7 +94,7 @@
         app:cornerRadius="8dp"
         android:layout_marginBottom="24dp" />
 
-    <!-- 6. Enlace a Registro (clickable true) -->
+    <!-- 6. Enlace a Registro  -->
     <TextView
         android:id="@+id/txtRegistrar"
         android:layout_width="wrap_content"

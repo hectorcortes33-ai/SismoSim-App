@@ -102,9 +102,6 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         cargarConfiguracion();
 
-        // OJO: Se removió 'alertaDisparada = false;' de aquí.
-        // Ahora solo se rearmará cuando el valor vuelva a reposo.
-
         handlerSondeo.removeCallbacks(runnableSondeo);
         handlerSondeo.post(runnableSondeo);
     }

@@ -80,7 +80,7 @@
             android:backgroundTint="#337AB7"
             android:layout_marginBottom="16dp" />
 
-        <!-- 5. Texto de Resultado (Inicia oculto hasta presionar probar) -->
+        <!-- 5. Texto de Resultado -->
         <TextView
             android:id="@+id/txtResultado"
             android:layout_width="match_parent"

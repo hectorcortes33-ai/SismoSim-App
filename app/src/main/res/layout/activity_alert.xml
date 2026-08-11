@@ -7,9 +7,8 @@
     android:orientation="vertical"
     android:padding="24dp"
     android:gravity="center_horizontal"
-    android:background="#FFFFFF"> <!-- Fondo blanco por defecto -->
-
-    <!-- 1. Titular de alerta (se llena en runtime) -->
+    android:background="#FFFFFF">
+    <!-- 1. Titular de alerta  -->
     <TextView
         android:id="@+id/txtAlerta"
         android:layout_width="wrap_content"
@@ -20,7 +19,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="32dp" />
 
-    <!-- 2. Valor pico que disparó el umbral (se llena en runtime) -->
+    <!-- 2. Valor pico que disparó el umbral  -->
     <TextView
         android:id="@+id/txtPico"
         android:layout_width="wrap_content"
@@ -30,7 +29,7 @@
         android:textColor="#00796B"
         android:layout_marginBottom="16dp" />
 
-    <!-- 3. Nodo y marca de tiempo (se llena en runtime) -->
+    <!-- 3. Nodo y marca de tiempo  -->
     <TextView
         android:id="@+id/txtOrigen"
         android:layout_width="wrap_content"

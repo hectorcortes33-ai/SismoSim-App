@@ -13,7 +13,7 @@
         android:padding="24dp"
         android:gravity="center_horizontal">
 
-        <!-- 1. Ícono de usuario decorativo (Avatar circular) -->
+        <!-- 1. Ícono de usuario decorativo -->
         <ImageView
             android:id="@+id/imgAvatar"
             android:layout_width="90dp"

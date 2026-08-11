@@ -44,7 +44,7 @@ public class SettingsActivity extends AppCompatActivity {
         // Cargar ajustes guardados previamente
         cargarAjustes();
 
-        // 2. Escuchadores con Lambdas (elimina advertencias amarillas)
+        // 2. Escuchadores con Lambdas
         if (btnProbar != null) {
             btnProbar.setOnClickListener(v -> probarConexion());
         }
@@ -149,7 +149,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         sharedPreferences.edit().clear().apply();
 
-        // CORREGIDO: SettingsActivity.this en lugar de SettingsActivity.java
+
         Intent intent = new Intent(SettingsActivity.this, LoginActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);

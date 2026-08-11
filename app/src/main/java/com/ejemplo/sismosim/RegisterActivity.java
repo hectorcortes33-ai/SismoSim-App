@@ -99,7 +99,7 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
             finish(); // Cierra la actividad y vuelve a LoginActivity
         } else {
-            // Falla si el correo ya existe en la base de datos (campo UNIQUE)
+            // Falla si el correo ya existe en la base de datos
             edtCorreo.setError("Este correo ya está registrado");
             edtCorreo.requestFocus();
             Toast.makeText(this, "No se pudo registrar. El correo ya existe.", Toast.LENGTH_LONG).show();

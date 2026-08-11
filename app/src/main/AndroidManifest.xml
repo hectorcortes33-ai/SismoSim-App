@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sismosim">
 
-        <!-- PROVEEDOR DE ARCHIVOS (Requerido para exportar CSV) -->
+        <!-- PROVEEDOR DE ARCHIVOS -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.ejemplo.sismosim.provider"
@@ -28,7 +28,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <!-- PANTALLA DE INICIO (Punto de entrada de la app) -->
+        <!-- PANTALLA DE INICIO -->
         <activity
             android:name=".LoginActivity"
             android:exported="true"

@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:padding="24dp">
 
-        <!-- 1. Título (se llena únicamente desde Java con la fecha/hora seleccionada) -->
+        <!-- 1. Título -->
         <TextView
             android:id="@+id/txtTitulo"
             android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
             android:layout_height="180dp"
             android:layout_marginBottom="20dp" />
 
-        <!-- 3. Datos VACÍOS (se calculan y muestran únicamente en runtime por Java) -->
+        <!-- 3. Datos VACÍOS -->
         <TextView
             android:id="@+id/txtPico"
             android:layout_width="match_parent"
